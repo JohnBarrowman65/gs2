@@ -1,0 +1,15 @@
+
+package com.gs.service;
+
+import java.util.List;
+
+import com.gs.pojo.Product;
+import com.gs.pojo.PropertyValue;
+
+public interface PropertyValueService {
+    void init(Product p);
+    void update(PropertyValue pv);
+
+    PropertyValue get(int ptid, int pid);
+    List<PropertyValue> list(int pid);
+}
